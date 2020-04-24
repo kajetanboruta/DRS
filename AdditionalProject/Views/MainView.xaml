@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:AdditionalProject.Views"
         mc:Ignorable="d"
         Background="#303030"
-        Title="MainWindow" MinHeight="600" Height="600" MinWidth="800" Width="800">
+        Title="DRS - Draw Random Student" MinHeight="600" Height="600" MinWidth="800" Width="800">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -14,8 +14,8 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <WrapPanel>
-                <Button Height="50" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ManageListView_Navigate" Content="Listy"/>
-                <Button Height="50" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Click="RandomizeView_Navigate" Content="Losu losu"/>
+                <Button Height="50" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Click="ManageListView_Navigate" Content="Lists"/>
+                <Button Height="50" Width="150" HorizontalAlignment="Left" VerticalAlignment="Top" Click="RandomizeView_Navigate" Content="Draw Random Student" IsEnabled="False"/>
             </WrapPanel>
 
             <!-- Menu banner -->

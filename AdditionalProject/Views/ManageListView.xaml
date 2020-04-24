@@ -31,7 +31,7 @@
             <StackPanel>
                 <Label Foreground="White" HorizontalAlignment="Center">GROUPS</Label>
                 <WrapPanel>
-                    <DataGrid x:Name="groups_Datagrid" Margin="10" Width="250" Height="80" SelectionChanged="DataGrid_SelectionChanged" ItemsSource="{Binding ClassGroup}">
+                    <DataGrid x:Name="groups_Datagrid" Margin="10" Width="250" Height="80" SelectionChanged="DataGrid_SelectionChanged" ItemsSource="{Binding ClassGroup}" AutoGenerateColumns="False">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
                             <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
@@ -55,7 +55,7 @@
             </StackPanel>
             <Button Height="50" Width="100" HorizontalAlignment="Center" Click="Button_Click">Add stud</Button>
         </Grid>
-        <Label Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="groupName" Foreground="White" Content="Nie wybrano grupy"/>
+        <!--<Label Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" x:Name="groupName" Foreground="White" Content="Nie wybrano grupy"/>-->
         <DataGrid Margin="10" Height="200" VerticalAlignment="Top" x:Name="students_Datagrid" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding ID}"/>

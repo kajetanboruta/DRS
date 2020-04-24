@@ -69,7 +69,7 @@ namespace AdditionalProject.Views
                     Height = 100,
                     Width = (double)maxWidth / (double)_students.Count,
                     ToolTip = $"{item.FirstName} {item.LastName}",
-                    Background = PickBrush()
+                    Background = PickBrush(),
                 };
                 blockOfStudents.Children.Add(studentBlock);
             }
@@ -235,7 +235,7 @@ namespace AdditionalProject.Views
                 winner = DrawWithPreviousWinner(winner);
 
             if (winner != null)
-                winnerDrawn.Text = winner.ToolTip.ToString();
+                winnerDrawn.Text = "Wygrywa " + winner.ToolTip.ToString() + "!!!";
         }
     }
 }
